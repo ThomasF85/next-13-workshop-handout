@@ -5,6 +5,7 @@
 - [Data Fetching](#data-fetching)
 - [Streaming and Suspense](#streaming-and-suspense-with-server-components)
 - [API / Route Handlers](#api--route-handlers)
+- [Advantages](#advantages)
 
 ## Routing
 
@@ -252,3 +253,11 @@ export async function GET(request) {
 Full Docs: [Docs on Route Handlers](https://nextjs.org/docs/app/building-your-application/routing/router-handlers)
 
 Important: [Dynamic route segments](https://nextjs.org/docs/app/building-your-application/routing/router-handlers#dynamic-route-segments)
+
+## Advantages
+
+- Streaming allows to display parts of the page early while other parts are still loading
+- Server components leverage the server and decrease bundle size
+- Usage of Next.js specific Components and APIs gets reduced => More vanilla JavaScript and React
+- Nested Layouts allow sharing UI between routes easily
+- Colocate files inside your app folder next to pages
