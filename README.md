@@ -246,11 +246,33 @@ Place `route.js` files inside the app directory to define new api routes. There 
 
 You can define `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`, and `OPTIONS` methods that consume a [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) and return a [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response):
 
+Returning data:
+
 ```js
 import { NextResponse } from "next/server";
 
-export async function GET(request) {
-  return NextResponse.json({ name: "John Doe" });
+export async function GET() {
+  // get data from API / database / really anywhere
+  const data = await getData();
+
+  return NextResponse.json(data);
+}
+```
+
+Returning error:
+
+```js
+import { NextResponse } from "next/server";
+
+export async function GET() {
+  return NextResponse.json(
+    {
+      message: "You caused a specific error",
+    },
+    {
+      status: 400,
+    }
+  );
 }
 ```
 
