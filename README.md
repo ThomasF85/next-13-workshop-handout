@@ -94,9 +94,13 @@ What are Server Components:
 - styled components is not currently working with server components
 - useful: To prevent unintended client usage of server code, the "server only" package can be helpful: [server only package](https://nextjs.org/docs/getting-started/react-essentials#the-server-only-package)
 
+[when to use Server and Client Components](https://nextjs.org/docs/getting-started/react-essentials#when-to-use-server-and-client-components)
+
 [thinking in Server Components](https://nextjs.org/docs/getting-started/react-essentials#thinking-in-server-components)
 
 [moving Client Components to the leaves](https://nextjs.org/docs/getting-started/react-essentials#thinking-in-server-components)
+
+[passing props from Server to Client Components](https://nextjs.org/docs/getting-started/react-essentials#passing-props-from-server-to-client-components-serialization)
 
 ## Data Fetching
 
