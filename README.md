@@ -109,7 +109,8 @@ With the App Router we do not use `getServerSideProps` and `getStaticProps` anym
 
 ```js
 export default async function Page() {
-  const artPieces = await fetch("https://example-apis.vercel.app/api/art");
+  const response = await fetch("https://example-apis.vercel.app/api/art");
+  const artPieces = await response.json();
 
   return (
     <>
